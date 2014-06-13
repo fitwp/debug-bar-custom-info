@@ -1,6 +1,7 @@
 # Debug Bar Custom Info #
 
-**Contributors:** fitwp, rilwis
+**Project Homepage:** http://fitwp.com/debug-bar-custom-info/
+
 **Donate link:** http://www.deluxeblogtips.com/donate
 
 This plugin adds an extra panel to Debug Bar plugin that allows developers to output custom debug info.
@@ -29,8 +30,6 @@ Add the following code whenever you want to debug a variable:
 `Debug_Bar_Custom_Info::add( $var );`
 
 where `$var` can has any data type. If it is a string or any simple value, the value is outputted directly. If it is an array or object, the output is the same as `print_r( $var )`.
-
-[Visit Project Homepage](http://fitwp.com/debug-bar-custom-info/)
 
 ## Installation ##
 
