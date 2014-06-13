@@ -1,11 +1,14 @@
-# Debug Bar Custom Info #
-
-**Contributors:** fitwp, rilwis
-**Donate link:** http://www.deluxeblogtips.com/donate
+=== Debug Bar Custom Info ===
+Contributors: fitwp, rilwis
+Donate link: http://www.deluxeblogtips.com/donate
+Tags: debug
+Requires at least: 3.8
+Tested up to: 3.9.1
+Stable tag: 1.0
 
 This plugin adds an extra panel to Debug Bar plugin that allows developers to output custom debug info.
 
-## Description ##
+== Description ==
 
 This plugin adds an extra panel to [Debug Bar](https://wordpress.org/plugins/debug-bar/) plugin that allows developers to output custom debug info.
 
@@ -32,13 +35,19 @@ where `$var` can has any data type. If it is a string or any simple value, the v
 
 [Visit Project Homepage](http://fitwp.com/debug-bar-custom-info/)
 
-## Installation ##
+== Installation ==
 
 1. Unzip the download package
 1. Upload `debug-bar-custom-info` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
-## Changelog ##
+== Frequently Asked Questions ==
 
-### 1.0 ###
+== Screenshots ==
+
+== Changelog ==
+
+= 1.0 =
 * First release
+
+== Upgrade Notice ==
