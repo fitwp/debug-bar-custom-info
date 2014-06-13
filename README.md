@@ -27,7 +27,7 @@ Note: You have to added the *custom* debug info yourself. The plugin only regist
 
 Add the following code whenever you want to debug a variable:
 
-`Debug_Bar_Custom_Info::add( $var );`
+`do_action( 'add_debug_info', $var );`
 
 where `$var` can has any data type. If it is a string or any simple value, the value is outputted directly. If it is an array or object, the output is the same as `print_r( $var )`.
 
@@ -38,6 +38,9 @@ where `$var` can has any data type. If it is a string or any simple value, the v
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
 ## Changelog ##
+
+### 1.1 ###
+* Use `do_action` to prevent fatal error when plugin files is not loaded
 
 ### 1.0 ###
 * First release

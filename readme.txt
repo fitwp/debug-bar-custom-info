@@ -4,7 +4,7 @@ Donate link: http://www.deluxeblogtips.com/donate
 Tags: debug
 Requires at least: 3.8
 Tested up to: 3.9.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 This plugin adds an extra panel to Debug Bar plugin that allows developers to output custom debug info.
 
@@ -29,7 +29,7 @@ Note: You have to added the *custom* debug info yourself. The plugin only regist
 
 Add the following code whenever you want to debug a variable:
 
-`Debug_Bar_Custom_Info::add( $var );`
+`do_action( 'add_debug_info', $var );`
 
 where `$var` can has any data type. If it is a string or any simple value, the value is outputted directly. If it is an array or object, the output is the same as `print_r( $var )`.
 
@@ -46,6 +46,9 @@ where `$var` can has any data type. If it is a string or any simple value, the v
 == Screenshots ==
 
 == Changelog ==
+
+= 1.0.1 =
+* Use `do_action` to prevent fatal error when plugin files is not loaded
 
 = 1.0 =
 * First release

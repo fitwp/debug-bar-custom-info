@@ -1,14 +1,10 @@
 <?php
-
-class Debug_Bar_Custom_Info extends Debug_Bar_Panel
+/**
+ * This class renders custom debug info into its own panel
+ * All the debug info is stored in Debug_Bar_Custom_Info::$info
+ */
+class DBCI_Panel extends Debug_Bar_Panel
 {
-	/**
-	 * Array of custom info
-	 *
-	 * @var array
-	 */
-	static $info = array();
-
 	/**
 	 * Show debug custom info
 	 *
@@ -16,7 +12,7 @@ class Debug_Bar_Custom_Info extends Debug_Bar_Panel
 	 */
 	public function render()
 	{
-		foreach ( self::$info as $info )
+		foreach ( Debug_Bar_Custom_Info::$info as $info )
 		{
 			if ( empty( $info ) )
 			{
@@ -35,17 +31,5 @@ class Debug_Bar_Custom_Info extends Debug_Bar_Panel
 
 			echo '<br><br><hr><br><br>';
 		}
-	}
-
-	/**
-	 * Easily add more text to custom info panel
-	 *
-	 * @param string $text
-	 *
-	 * @return void
-	 */
-	static function add( $text )
-	{
-		self::$info[] = $text;
 	}
 }
