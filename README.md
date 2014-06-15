@@ -1,6 +1,6 @@
 # Debug Bar Custom Info #
 
-**Project Homepage:** http://fitwp.com/debug-bar-custom-info/
+**Project Homepage:** http://fitwp.com/plugins/debug-bar-custom-info/
 
 **Donate link:** http://www.deluxeblogtips.com/donate
 

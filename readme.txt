@@ -32,7 +32,7 @@ where `$var` can has any data type.
 - Click on **Debug Bar** in the top right of the admin bar
 - Select **Custom Info** panel (see [screenshots](https://wordpress.org/plugins/debug-bar-custom-info/screenshots/))
 
-[Project Homepage](http://fitwp.com/debug-bar-custom-info/) | [Report Bugs](https://github.com/fitwp/debug-bar-custom-info/issues) | [Donate](http://www.deluxeblogtips.com/donate/)
+[Project Homepage](http://fitwp.com/plugins/debug-bar-custom-info/) | [Report Bugs](https://github.com/fitwp/debug-bar-custom-info/issues) | [Donate](http://www.deluxeblogtips.com/donate/)
 
 == Installation ==
 
