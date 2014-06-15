@@ -5,6 +5,8 @@ Tags: debug
 Requires at least: 3.8
 Tested up to: 3.9.1
 Stable tag: 1.0.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This plugin adds an extra panel to Debug Bar plugin that allows developers to output custom debug info.
 
@@ -12,28 +14,25 @@ This plugin adds an extra panel to Debug Bar plugin that allows developers to ou
 
 This plugin adds an extra panel to [Debug Bar](https://wordpress.org/plugins/debug-bar/) plugin that allows developers to output custom debug info.
 
-Think about it like Console in browsers!
+Developers can log any variable to see its value when running PHP in WordPress. This helps developers see the real-time values of variables. It works exactly like `console.log()` in browsers.
 
-**How to view debug info**
+= How to add custom debug info =
 
-- You first need to install the [Debug Bar](https://wordpress.org/plugins/debug-bar/) plugin
-- Install this plugin
-- When viewing a page, click on **Debug Bar** in the top right of the admin bar
-- Select **Custom Info** panel (see screenshots)
-
-That's the place where you see all custom debug info.
-
-Note: You have to added the *custom* debug info yourself. The plugin only register a place for you to output the debug info.
-
-**How to add debug info to Custom Info panel**
-
-Add the following code whenever you want to debug a variable:
+Add the following code wherever you want to debug a variable:
 
 `do_action( 'add_debug_info', $var );`
 
-where `$var` can has any data type. If it is a string or any simple value, the value is outputted directly. If it is an array or object, the output is the same as `print_r( $var )`.
+where `$var` can has any data type.
 
-[Visit Project Homepage](http://fitwp.com/debug-bar-custom-info/)
+- If `$var` is a string or any simple value, the value is outputted directly.
+- If `$var` is an array or object, the output is the same as `print_r( $var )`.
+
+= How to view debug info =
+
+- Click on **Debug Bar** in the top right of the admin bar
+- Select **Custom Info** panel (see [screenshots](https://wordpress.org/plugins/debug-bar-custom-info/screenshots/))
+
+[Project Homepage](http://fitwp.com/debug-bar-custom-info/) | [Report Bugs](https://github.com/fitwp/debug-bar-custom-info/issues) | [Donate](http://www.deluxeblogtips.com/donate/)
 
 == Installation ==
 
@@ -44,6 +43,8 @@ where `$var` can has any data type. If it is a string or any simple value, the v
 == Frequently Asked Questions ==
 
 == Screenshots ==
+
+1. Custom Info Panel
 
 == Changelog ==
 
