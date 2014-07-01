@@ -12,20 +12,22 @@ class DBCI_Panel extends Debug_Bar_Panel
 	 */
 	public function render()
 	{
-		foreach ( Debug_Bar_Custom_Info::$info as $info )
+		foreach ( Debug_Bar_Custom_Info::$info as $label => $variable )
 		{
-			if ( empty( $info ) )
+			if ( is_string( $label ) && $label )
+				echo "<h1>$label</h1>";
+			if ( empty( $variable ) )
 			{
-				var_dump( $info );
+				var_dump( $variable );
 			}
-			elseif ( is_string( $info ) )
+			elseif ( is_string( $variable ) )
 			{
-				echo $info;
+				echo $variable;
 			}
 			else
 			{
 				echo '<pre>';
-				print_r( $info );
+				print_r( $variable );
 				echo '</pre>';
 			}
 

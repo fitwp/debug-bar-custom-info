@@ -20,12 +20,14 @@ Developers can log any variable to see its value when running PHP in WordPress. 
 
 Add the following code wherever you want to debug a variable:
 
-`do_action( 'add_debug_info', $var );`
+`do_action( 'add_debug_info', $var, $label );`
 
 where `$var` can has any data type.
 
 - If `$var` is a string or any simple value, the value is outputted directly.
 - If `$var` is an array or object, the output is the same as `print_r( $var )`.
+
+And `$label` is the description label (optional).
 
 = How to view debug info =
 
@@ -47,6 +49,9 @@ where `$var` can has any data type.
 1. Custom Info Panel
 
 == Changelog ==
+
+= 1.0.2 =
+* Add 2nd param "label" to `do_action`
 
 = 1.0.1 =
 * Use `do_action` to prevent fatal error when plugin files is not loaded
